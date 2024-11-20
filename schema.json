@@ -1,0 +1,81 @@
+{
+   "author":"TripleZone",
+   "support_email":"support@triplezone.dev",
+   "config":[
+      {
+         "header":"Customize Template",
+         "options":[
+           {
+               "id":"steam",
+               "name":"Steam Game Server",
+               "default":"false",
+               "description":"Choose between true and false.",
+               "type":"textarea"
+           },
+           {
+               "id":"fivem",
+               "name":"FiveM Game Server",
+               "default":"false",
+               "description":"Choose between true and false.",
+               "type":"textarea"
+           },           
+           {
+               "id":"game_type",
+               "name":"Game Server",
+               "default":"minecraft",
+               "description":"minecraft, rust, unturned",
+               "type":"textarea"
+           },            
+           {
+               "id":"category_navigation",
+               "name":"Category Nav (sidebar or topbar)",
+               "default":"sidebar",
+               "description":"Choose between sidebar and top_bar.",
+               "type":"textarea"
+           },
+           {
+               "id":"topbar_style",
+               "name":"Topbar Nav (centered or normal)",
+               "default":"normal",
+               "description":"Choose between centered and normal.",
+               "type":"textarea"
+           },
+           {
+               "id":"server_category",
+               "name":"cracked or premium?",
+               "default":"premium",
+               "description":"Choose your server category.",
+               "type":"textarea"
+            }, 
+            {
+               "id":"server-ip",
+               "name":"Server IP",
+               "default":"eu.hypixel.net",
+               "description":"Enter your Server IP.",
+               "type":"textarea"
+            },
+            {
+               "id":"server-port",
+               "name":"Server Port",
+               "default":"25565",
+               "description":"Enter your server port.",
+               "type":"textarea"
+            },
+            {
+               "id":"discord_invite",
+               "name":"Discord Invite Link",
+               "default":"https://google.com",
+               "description":"Enter your discord invite link.",
+               "type":"textarea"
+            },
+            {
+               "id":"discord_id",
+               "name":"Discord Server ID",
+               "default":"508657212105818140",
+               "description":"Enter your Discord ID from the server settings.",
+               "type":"textarea"
+            }           
+         ]
+      }
+   ]
+}

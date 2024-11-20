@@ -1,0 +1,292 @@
+{% set theme_configuration = {
+
+
+    generalSettings: {
+        
+        developerMode: false, 
+        
+        christmasMode: false,
+        
+        searchOnStoreWithoutLoggingIn: true,
+        
+        useMinifiedCss: true, 
+    },
+
+
+    forumsButton: {
+        enabled: true,
+        link: '/',
+        name: 'Forums'
+    }, 
+
+    steam: {
+        profileSteamIcon: "https://cdn.discordapp.com/attachments/455777545485549589/797904052289011744/rust_94773.png"
+    },
+
+    navigationIcons: {
+        icon_1858944: { 
+            sidebarId: "l1858944", 
+            topbarId: "s1858944", 
+            image: "https://i.imgur.com/gXPCyVX.png"
+        },
+            
+        icon_packages: { 
+            sidebarId: "lpackages", 
+            topbarId: "spackages", 
+            image: "https://i.imgur.com/gXPCyVX.png"
+        },
+            
+        icon_ranks: { 
+            sidebarId: "lranks", 
+            topbarId: "sranks", 
+            image: "https://i.imgur.com/gXPCyVX.png"
+        },
+            
+        icon_crates: { 
+            sidebarId: "lcrates", 
+            topbarId: "scrates", 
+            image: "https://i.imgur.com/gXPCyVX.png"
+        }            
+    },
+
+    giftPackageAddon: {
+        enabled: true,
+        packages: {
+            firstPackage:    { id: "4556370", text: "Coupon1"},
+        }
+    },
+
+    upgradePackageAddon: {
+        enabled: true,
+        upgradePrefix: ">>",
+        upgradeCategories: ['Ranks', 'Crates'],
+        upgradePackages: {
+            vip: { 
+                title: "Vip", 
+                image: "https://dunb17ur4ymx4.cloudfront.net/packages/images/1de6fe6f08ce142005f7141c90ac7c707830b181.png", 
+                rank_to_upgrade: "4213822",
+                category: "Ranks"
+            },
+            example: { 
+                title: "Example Package", 
+                image: "https://dunb17ur4ymx4.cloudfront.net/packages/images/1de6fe6f08ce142005f7141c90ac7c707830b181.png", 
+                rank_to_upgrade: "4213822",
+                category: "Crates"
+            }                  
+        }
+    },
+    
+    featuredPackagesAddon: {
+        enabled: false,
+        enabledOnPhone: true,
+        packages: {
+            first_package: { 
+                id: "4408089", 
+                image: "https://dunb17ur4ymx4.cloudfront.net/packages/images/f7a34b0b88caebd32816be3f481c88f1a7591c79.png",
+                name: "10x Dang Key",
+                color: "#2196f3",
+                price: 49.99
+            },
+            second_package: { 
+                id: "4408173", 
+                image: "https://dunb17ur4ymx4.cloudfront.net/packages/images/f7a34b0b88caebd32816be3f481c88f1a7591c79.png",
+                name: "10x Dang Key",
+                color: "#4caf50",
+                price: 49.99
+            },
+            third_package: { 
+                id: "4408172", 
+                image: "https://dunb17ur4ymx4.cloudfront.net/packages/images/f7a34b0b88caebd32816be3f481c88f1a7591c79.png",
+                name: "10x Dang Key",
+                color: "#f44336",
+                price: 49.99
+            }            
+        }
+    },       
+
+    lang: {
+        select_category: 'Select a category',
+        loading_text: 'Loading..',
+        click_to_copy: 'click to copy',
+        click_to_join: 'click to join',
+        not_afflied: 'We are not affiliated with Mojang AB.',
+        all_rights_reserved: 'All Rights Reserved.',
+        home: 'Home',
+        empty_cart: 'empty cart',
+        click_to_login: 'Click to login',
+        guest: 'Guest',
+        player_cart: "'s Cart",
+        play_now: 'Play Now',
+        currency: 'Currency',
+        shopping_cart: 'Shopping Cart',
+        keep_adding_items: 'Keep adding items to cart and check back here to complete your purchase!',
+        proceed_to_checkout: 'Proceed to checkout',
+        free_basket: 'FREE',
+        logout: 'Logout',
+        join_text: 'We hope to see you online soon!',
+        enter_a_valid_code: 'enter a valid code!',
+        please_enter_your_username: 'Please enter your username to continue',
+        please_enter_your_username_description: "Usernames can't contain spaces, they can have any letter and number, and they are Case Sensitive.",
+        continue: 'Continue',
+        steam_click_to_login_in: 'Click to log in',
+        steam_login: 'Log in with your steam',
+        steam_aff: 'We are not affilied with Steam or Valve.',
+        add_to_cart: 'Add to cart',
+        remove_from_cart: 'Remove',
+        item_is_free: 'This item is free',
+        upgrade_your_package: 'Upgrade your package',
+        select_a_package_that_you_own: 'Select a package you already own and upgrade it!',
+        select_a_package_that_you_own_2: 'Select a package you own',
+        click_to_select: 'Click to select',
+        click_to_upgrade_your_package: 'Click to upgrade your package!',
+        select_the_package: 'Select the package that you own to see the upgrade.',
+        which_package_you_own: 'Which package do you own?',
+        welcome_to_the_server: 'Welcome to the official',
+        store_title: "Store",
+        featured_packages_title: 'Featured Packages',
+        click_to_logout: 'Click to logout',
+        shopping_as: 'Shopping as',
+        items_in_cart: 'items in cart',
+        have_a_coupon: 'Do you have a coupon?',
+        redeem_coupon: 'Redeem',
+        finalize_purchase: 'Finalize Purchase',
+        redirect_payment: 'You will be directed to our payment gateway to complete your purchase.',
+        payment_method: 'Payment method',
+        no_fee: 'No fee',
+        billing_details: 'Billing details',
+        monthly_goal: 'Monthly Goal'
+    }    
+
+
+} %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ store.name }} | {{ page.title }}</title>
+<link href="/templates/209/css/style.min.css" rel="stylesheet">
+{% if theme_configuration.generalSettings.useMinifiedCss %}
+<link href="{{ asset('style.min.css') }}" rel="stylesheet">
+{% else %}
+<link href="{{ asset('style.css') }}" rel="stylesheet">
+{% endif %}
+<link rel="shortcut icon" href="{{ store.favicon }}">
+
+{% include 'external_assets.twig' %}
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+
+    _gaq.push(['_setAccount', 'UA-36735942-3']);
+    _gaq.push(['_trackPageview']);
+
+    {% if store.googleAnalytics %}
+    _gaq.push(['b._setAccount', '{{ store.googleAnalytics }}']);
+    _gaq.push(['b._trackPageview']);
+    {% endif %}
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<style>
+    {{ store.css|raw }}
+</style>
+
+</head>
+<body>
+<div class="header-splash"><div class="teata" style="height: 100%;width: 100%;background: linear-gradient(transparent 0,rgb(0 0 0 / 53%) 30%,#131b28 100%);"></div></div>
+<div class="triplezone-wrapper">
+	<main class="login__page">
+        <div class="login__logo">
+            <img src="{{ store.logo }}" alt=""/>
+        </div>
+        {% if config("fivem") == "false" %}
+        {% if config("steam") == "false" %}
+        <div class="login__box">
+            <div class="login__box--header">
+                <p class="login__box--title">{{ theme_configuration.lang.please_enter_your_username }}</p>
+                <p class="login__box--description">
+                    {{ theme_configuration.lang.please_enter_your_username_description }}
+                </p>
+            </div>
+            <div class="login__box--body">
+                <form method="post" action="/login">
+                    <div class="username">
+                        <div class="triplezone-login">
+                            <div id="IGN_MC">
+                                <img src="https://cravatar.eu/helmavatar/MHF_Question/32.png" alt="" id="avatar_MC">
+                                <input type="text" name="ign" placeholder="Enter your username..." id="mc_IGN_INPUT" autocomplete="off">
+                            </div>
+                            <button class="" type="submit">{{ theme_configuration.lang.continue }}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="login__box">
+            <div class="login__box--header">
+                <p class="login__box--title">{{ theme_configuration.lang.steam_login }}</p>
+                <p class="login__box--description">
+                    {{ theme_configuration.lang.steam_aff }}
+                </p>
+            </div>
+            <div class="login__box--body">
+                <form method="post" action="/login">
+                    <div class="username">
+                        <div class="triplezone-login">
+                            <div id="IGN_MC" style="display: none;">
+                                <img src="https://cravatar.eu/helmavatar/MHF_Question/32.png" alt="" id="avatar_MC">
+                                <input type="text" name="ign" placeholder="Enter your username..." id="mc_IGN_INPUT" autocomplete="off">
+                            </div>
+                            <a href="https://ident.tebex.io/steam?return={{ url() }}?ign=" class="steam__login">{{ theme_configuration.lang.steam_click_to_login_in }}</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="login__box">
+            <div class="login__box--header">
+                <p class="login__box--title">Please login using your CFX.re account so we can identify you in game</p>
+                <p class="login__box--description">
+                    {{ theme_configuration.lang.steam_aff }}
+                </p>
+            </div>
+            <div class="login__box--body">
+                <form method="post" action="/login">
+                    <div class="username">
+                        <div class="triplezone-login">
+                            <div id="IGN_MC" style="display: none;">
+                                <img src="https://cravatar.eu/helmavatar/MHF_Question/32.png" alt="" id="avatar_MC">
+                                <input type="text" name="ign" placeholder="Enter your username..." id="mc_IGN_INPUT" autocomplete="off">
+                            </div>
+                            <a href="https://ident.tebex.io/fivem?return={{ url() }}%2Flogin%3Fign%3D" class="steam__login">{{ theme_configuration.lang.steam_click_to_login_in }}</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>        
+        {% endif %}
+        <a href="/" class="return__home">Return to home</a>
+    </main>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+        $('#mc_IGN_INPUT').on('keyup', function () {
+            if (this.value.length > 1) {
+                $("#avatar_MC").attr("src", `https://cravatar.eu/helmavatar/${this.value}/32.png`)
+            } else {
+                $("#avatar_MC").attr("src", `https://cravatar.eu/helmavatar/MHF_Question/32.png`)
+            }
+        });    
+</script>
+</html>
